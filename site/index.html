@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LIMELEN TATTOO — тату и пирсинг в Красноярске</title>
+  <meta name="description" content="Тату-мастер в Красноярске: ч/б и цветные татуировки, индивидуальные эскизы, пирсинг. Опыт более 7 лет, студия GLOW. Бесплатная консультация.">
+  <meta property="og:title" content="LIMELEN TATTOO — тату и пирсинг в Красноярске">
+  <meta property="og:description" content="Ч/б и цветные татуировки, индивидуальные эскизы, пирсинг. Студия GLOW, ул. Петра Подзолкова, 6.">
+  <meta property="og:image" content="assets/img/portrait-hero.jpg">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0b0a0d">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Перейти к содержимому</a>
+
+  <header class="header" id="header">
+    <div class="header__inner wrap">
+      <a class="logo" href="#top" aria-label="LIMELEN TATTOO — на главную">LIMELEN <span class="spark" aria-hidden="true">✦</span> TATTOO</a>
+      <nav class="nav" id="nav" aria-label="Основное меню">
+        <a href="#works">Работы</a>
+        <a href="#why">Почему я</a>
+        <a href="#about">Обо мне</a>
+        <a href="#studio">Студия</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#booking" class="nav__cta-mobile">Записаться</a>
+      </nav>
+      <a class="btn btn--accent btn--sm header__cta" href="#booking">Записаться</a>
+      <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="hero__inner wrap">
+        <div class="hero__text">
+          <p class="eyebrow hero__eyebrow"><span>Тату-мастер ·</span> <span>Красноярск ·</span> <span>студия GLOW</span></p>
+          <h1 class="hero__title">Limelen<span class="hero__spark" aria-hidden="true">✦</span><br>Tattoo<span class="hero__spark hero__spark--sm" aria-hidden="true">✦</span></h1>
+          <p class="hero__lead">Создаю тату с любовью</p>
+          <ul class="hero__tags">
+            <li>Ч/Б и цветная татуировка</li>
+            <li>Рисую эскизы</li>
+            <li>Пирсинг</li>
+          </ul>
+          <div class="hero__actions">
+            <a class="btn btn--accent" href="#booking">Бесплатная консультация</a>
+            <a class="btn btn--ghost" href="https://t.me/ELEONORA_Lim" target="_blank" rel="noopener">Написать в Telegram</a>
+          </div>
+        </div>
+        <div class="hero__media">
+          <img src="assets/img/portrait-hero.jpg" width="502" height="612" alt="Тату-мастер Limelen с татуировкой на руке" fetchpriority="high">
+        </div>
+      </div>
+      <dl class="stats wrap">
+        <div class="stats__item"><dt>7+</dt><dd>лет в&nbsp;татуировке</dd></div>
+        <div class="stats__item"><dt>1000+</dt><dd>довольных клиентов</dd></div>
+        <div class="stats__item"><dt>600+</dt><dd>индивидуальных эскизов</dd></div>
+      </dl>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>Ч/Б тату</span><i>✦</i><span>Цветные тату</span><i>✦</i><span>Авторские эскизы</span><i>✦</i><span>Пирсинг</span><i>✦</i><span>Студия GLOW</span><i>✦</i>
+        <span>Ч/Б тату</span><i>✦</i><span>Цветные тату</span><i>✦</i><span>Авторские эскизы</span><i>✦</i><span>Пирсинг</span><i>✦</i><span>Студия GLOW</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- Works -->
+    <section class="section" id="works">
+      <div class="wrap">
+        <div class="section__head section__head--row">
+          <div>
+            <p class="eyebrow"><span class="spark">✦</span> Портфолио</p>
+            <h2 class="h2">Мои работы</h2>
+          </div>
+          <div class="filters" role="tablist" aria-label="Фильтр работ">
+            <button class="filter is-active" type="button" role="tab" aria-selected="true" data-filter="all">Все</button>
+            <button class="filter" type="button" role="tab" aria-selected="false" data-filter="tattoo">Тату</button>
+            <button class="filter" type="button" role="tab" aria-selected="false" data-filter="piercing">Пирсинг</button>
+          </div>
+        </div>
+        <div class="gallery" id="gallery"></div>
+        <div class="gallery__more">
+          <button class="btn btn--ghost" type="button" id="more">Показать ещё</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why -->
+    <section class="section section--alt" id="why">
+      <div class="wrap why">
+        <div class="why__media" aria-hidden="true">
+          <img id="why-img" src="assets/img/why-experience.jpg" width="471" height="571" alt="">
+        </div>
+        <div class="why__body">
+          <p class="eyebrow"><span class="spark">✦</span> Почему я</p>
+          <h2 class="h2">Делаю так, чтобы хотелось показывать</h2>
+          <ol class="why__list">
+            <li data-img="why-experience.jpg">
+              <h3>Более 7 лет в татуировке</h3>
+              <p>Больше 1&nbsp;000 довольных клиентов. Работаю на&nbsp;любых участках тела — татуировки заживают легко.</p>
+            </li>
+            <li data-img="why-sketch.jpg">
+              <h3>Индивидуальные эскизы</h3>
+              <p>Нарисовала больше 600 эскизов под конкретных людей. Есть идея, но&nbsp;нет картинки — нарисую.</p>
+            </li>
+            <li data-img="why-honest.jpg">
+              <h3>Помогу выбрать не херню</h3>
+              <p>Не стану сразу бить эскиз, который уже перебили все мастера. Скажу как есть, объясню почему и&nbsp;помогу прийти к&nbsp;своему.</p>
+            </li>
+            <li data-img="why-education.jpg">
+              <h3>Художественное образование</h3>
+              <p>Художественная школа и&nbsp;Институт дизайна и&nbsp;архитектуры. Рисунок, композиция и&nbsp;стиль — моя база.</p>
+            </li>
+            <li data-img="why-safety.jpg">
+              <h3>Безопасность</h3>
+              <p>Всё стерильно и&nbsp;одноразово. Моя безопасность — это ваша безопасность.</p>
+            </li>
+            <li data-img="why-consult.jpg">
+              <h3>Бесплатная консультация</h3>
+              <p>Примерка, отрисовка и&nbsp;обсуждение всех деталей — до&nbsp;сеанса и&nbsp;без оплаты.</p>
+            </li>
+            <li data-img="why-fast.jpg">
+              <h3>Быстро бью</h3>
+              <p>Качественно и&nbsp;без лишних часов в&nbsp;кресле.</p>
+            </li>
+            <li data-img="why-universal.jpg">
+              <h3>Любой стиль</h3>
+              <p>Не разбираешься в&nbsp;стилях — не&nbsp;страшно. Напиши идею, а&nbsp;стиль подберём вместе.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="wrap about">
+        <figure class="about__portrait">
+          <img src="assets/img/portrait-neon.jpg" width="576" height="760" alt="Limelen в неоновом свете" loading="lazy">
+        </figure>
+        <div class="about__body">
+          <p class="eyebrow"><span class="spark">✦</span> Обо мне</p>
+          <h2 class="h2">Тату-мастер, дизайнер и&nbsp;мастер пирсинга</h2>
+          <p class="lead">Работаю больше 7&nbsp;лет и&nbsp;научилась чувствовать своих гостей. Умею работать с&nbsp;кожей так, что в&nbsp;80% случаев коррекция не&nbsp;понадобится.</p>
+          <ul class="facts">
+            <li><strong>Образование дизайнера.</strong> Рисунок, композиция и&nbsp;визуализация помогают в&nbsp;каждой работе.</li>
+            <li><strong>Тату-конвенции.</strong> Выставляю свои работы на&nbsp;тату-фестивалях.</li>
+            <li><strong>Своя студия.</strong> Пару лет назад открыла тату- и&nbsp;пирсинг-студию в&nbsp;Красноярске — мой второй дом.</li>
+            <li><strong>Тату + пирсинг за&nbsp;один визит.</strong> Можно уйти с&nbsp;новой татуировкой и&nbsp;новым проколом сразу.</li>
+            <li><strong>Обучаю татуировке.</strong> Делюсь опытом с&nbsp;начинающими мастерами.</li>
+          </ul>
+          <div class="about__pics">
+            <img src="assets/img/about-process.jpg" width="386" height="516" alt="Процесс работы над татуировкой на бедре" loading="lazy">
+            <img src="assets/img/convention.jpg" width="388" height="512" alt="Стенд Limelen Tattoo на тату-конвенции" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Studio -->
+    <section class="section section--alt" id="studio">
+      <div class="wrap">
+        <div class="section__head section__head--row">
+          <div>
+            <p class="eyebrow"><span class="spark">✦</span> Студия</p>
+            <h2 class="h2">Коворкинг-студия GLOW</h2>
+          </div>
+          <p class="section__note">Самая уютная студия города. Всё для&nbsp;комфорта на&nbsp;коротких и&nbsp;длинных сеансах.</p>
+        </div>
+      </div>
+      <div class="strip" id="studio-strip" tabindex="0" aria-label="Фотографии студии, прокручиваются горизонтально"></div>
+      <div class="wrap">
+        <div class="rent">
+          <p><strong>Мастерам:</strong> суточная аренда укомплектованного рабочего места со&nbsp;всеми ништяками.</p>
+          <a class="link" href="https://t.me/ELEONORA_Lim" target="_blank" rel="noopener">Узнать условия →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="section" id="reviews">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="eyebrow"><span class="spark">✦</span> Отзывы</p>
+          <h2 class="h2">Что пишут гости</h2>
+        </div>
+      </div>
+      <div class="strip strip--reviews" id="reviews-strip" tabindex="0" aria-label="Скриншоты отзывов, прокручиваются горизонтально"></div>
+    </section>
+
+    <!-- Process -->
+    <section class="section section--alt" id="process">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="eyebrow"><span class="spark">✦</span> Как записаться</p>
+          <h2 class="h2">Шесть шагов до&nbsp;новой татуировки</h2>
+        </div>
+        <ol class="steps">
+          <li><span class="steps__n">01</span><h3>Ты пишешь мне</h3><p>Через форму ниже или в&nbsp;мессенджер.</p></li>
+          <li><span class="steps__n">02</span><h3>Выбираешь тату или&nbsp;пирсинг</h3><p>Можно и&nbsp;то, и&nbsp;другое за&nbsp;один визит.</p></li>
+          <li><span class="steps__n">03</span><h3>Я связываюсь с&nbsp;тобой</h3><p>Отвечу и&nbsp;задам пару вопросов.</p></li>
+          <li><span class="steps__n">04</span><h3>Обсуждаем идею</h3><p>Встречаемся на&nbsp;бесплатной консультации.</p></li>
+          <li><span class="steps__n">05</span><h3>Рисуем эскиз</h3><p>Индивидуально, под тебя.</p></li>
+          <li><span class="steps__n">06</span><h3>Встречаемся на&nbsp;сеансе</h3><p>И&nbsp;ты уходишь с&nbsp;татуировкой мечты.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Booking -->
+    <section class="section booking" id="booking">
+      <div class="wrap booking__inner">
+        <div class="booking__intro">
+          <p class="eyebrow"><span class="spark">✦</span> Запись</p>
+          <h2 class="h2">Получить бесплатную консультацию</h2>
+          <p class="lead">Оставь заявку — я напишу тебе в&nbsp;Telegram или позвоню.</p>
+
+          <ul class="contacts">
+            <li><span>Телефон</span><a href="tel:+79831441984">+7 (983) 144-19-84</a></li>
+            <li><span>Адрес</span><a href="https://yandex.ru/maps/?text=%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D1%8F%D1%80%D1%81%D0%BA%2C%20%D1%83%D0%BB.%20%D0%9F%D0%B5%D1%82%D1%80%D0%B0%20%D0%9F%D0%BE%D0%B4%D0%B7%D0%BE%D0%BB%D0%BA%D0%BE%D0%B2%D0%B0%2C%206" target="_blank" rel="noopener">Красноярск, ул.&nbsp;Петра Подзолкова, 6</a></li>
+          </ul>
+          <div class="socials">
+            <a href="https://t.me/ELEONORA_Lim" target="_blank" rel="noopener" aria-label="Telegram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.5 4.3 2.9 11.5c-1.3.5-1.2 1.2-.2 1.5l4.8 1.5 1.8 5.6c.2.6.4.8.9.8.4 0 .6-.2.9-.5l2.3-2.2 4.7 3.5c.9.5 1.5.2 1.7-.8l3.1-14.6c.3-1.3-.5-1.9-1.4-1.5Zm-3.2 3.4-8.7 7.9-.3 3.4-1.6-5 10.3-6.5c.5-.3.8 0 .3.2Z"/></svg>
+            </a>
+            <a href="https://wa.me/79831441984?text=%D0%A5%D0%BE%D1%87%D1%83%20%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D1%8E!" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+            </a>
+            <a href="https://vk.com/write-136030814" target="_blank" rel="noopener" aria-label="ВКонтакте">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 18c-6.2 0-9.8-4.3-10-11.4h3.1c.1 5.2 2.4 7.4 4.2 7.9V6.6h3v4.5c1.8-.2 3.6-2.2 4.3-4.5h2.9a8.6 8.6 0 0 1-3.9 5.6 8.9 8.9 0 0 1 4.6 5.8h-3.2c-.7-2.2-2.4-3.8-4.7-4V18H13Z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/limelen_tattoo/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7.3a4.7 4.7 0 1 0 0 9.4 4.7 4.7 0 0 0 0-9.4Zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm6-7.9a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0ZM21.4 8.2c0-1.6-.4-3-1.6-4.1C18.7 3 17.3 2.6 15.7 2.6c-1.6-.1-6.4-.1-8 0-1.6 0-3 .4-4.1 1.5C2.5 5.2 2.1 6.6 2.1 8.2c-.1 1.6-.1 6.4 0 8 0 1.6.4 3 1.5 4.1 1.1 1.1 2.5 1.5 4.1 1.6 1.6.1 6.4.1 8 0 1.6 0 3-.4 4.1-1.6 1.1-1.1 1.5-2.5 1.6-4.1.1-1.6.1-6.4 0-8Zm-2.1 9.9a3.2 3.2 0 0 1-1.8 1.8c-1.3.5-4.3.4-5.6.4-1.4 0-4.4.1-5.6-.4a3.2 3.2 0 0 1-1.8-1.8c-.5-1.3-.4-4.3-.4-5.6 0-1.4-.1-4.4.4-5.6.3-.8 1-1.5 1.8-1.8 1.3-.5 4.3-.4 5.6-.4 1.4 0 4.4-.1 5.6.4.8.3 1.5 1 1.8 1.8.5 1.3.4 4.3.4 5.6 0 1.4.1 4.4-.4 5.6Z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <form class="form" id="lead-form" novalidate>
+          <div class="field">
+            <label for="f-name">Имя и ник в Telegram</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Анна, @anna" required maxlength="100">
+          </div>
+          <div class="field">
+            <label for="f-phone">Телефон</label>
+            <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+7 (900) 000-00-00" required maxlength="25">
+          </div>
+          <fieldset class="field">
+            <legend>Что ты хочешь?</legend>
+            <div class="choices">
+              <label class="choice"><input type="checkbox" name="service" value="Тату" checked><span>Тату</span></label>
+              <label class="choice"><input type="checkbox" name="service" value="Пирсинг"><span>Пирсинг</span></label>
+              <label class="choice"><input type="checkbox" name="service" value="Другое"><span>Другое</span></label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="f-idea">Идея <span class="muted">— необязательно</span></label>
+            <textarea id="f-idea" name="idea" rows="3" maxlength="1000" placeholder="Что, где на теле и примерный размер"></textarea>
+          </div>
+          <div class="hp" aria-hidden="true">
+            <label for="f-website">Не заполняйте</label>
+            <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off">
+          </div>
+          <label class="consent">
+            <input type="checkbox" name="consent" required>
+            <span>Согласен(на) с&nbsp;<a href="privacy.html" target="_blank">обработкой персональных данных</a></span>
+          </label>
+          <button class="btn btn--accent btn--block" type="submit">Отправить заявку</button>
+          <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <a class="logo" href="#top">LIMELEN <span class="spark" aria-hidden="true">✦</span> TATTOO</a>
+      <p>Тату и пирсинг в Красноярске · <a href="privacy.html">Политика конфиденциальности</a></p>
+      <p>© <span id="year">2026</span></p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Просмотр фото" hidden>
+    <button class="lightbox__close" type="button" aria-label="Закрыть">✕</button>
+    <button class="lightbox__nav lightbox__nav--prev" type="button" aria-label="Предыдущее фото">←</button>
+    <img class="lightbox__img" alt="">
+    <button class="lightbox__nav lightbox__nav--next" type="button" aria-label="Следующее фото">→</button>
+    <p class="lightbox__count" aria-live="polite"></p>
+  </div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

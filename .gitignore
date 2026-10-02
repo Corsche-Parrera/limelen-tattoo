@@ -1,0 +1,6 @@
+# Full-size originals from Tilda (~50 MB); regenerate site images with _source/build-images.ps1
+_source/img/
+
+.netlify/
+Thumbs.db
+.DS_Store
